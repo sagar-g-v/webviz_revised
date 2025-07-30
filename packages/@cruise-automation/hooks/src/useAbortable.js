@@ -44,7 +44,8 @@ export default function useAbortable<T>(
     return () => {
       setResult(defaultValue);
       // on unmount or args changing clean up the old value
-      promise.then(cleanup);
+      // ensure cleanup is called even if the async action rejects
+      promise.then(cleanup, () => cleanup(undefined));
       controller.abort();
     };
   }, args);
