@@ -5,7 +5,7 @@
 //  This source code is licensed under the Apache License, Version 2.0,
 //  found in the LICENSE file in the root directory of this source tree.
 //  You may not use this file except in compliance with the License.
-import removeEmptyDiagnosticsConfigNames from "webviz-core/migrations/frozenMigrations/2020.10.22.14:44:54.removeEmptyDiagnosticsConfigNames.js";
+import removeEmptyDiagnosticsConfigNames from "webviz-core/migrations/frozenMigrations/2020.10.22.14-44-54.removeEmptyDiagnosticsConfigNames.js";
 
 describe("removeEmptyDiagnosticsConfigNames", () => {
   it("removes empty selected names from the relevant panel types", () => {
