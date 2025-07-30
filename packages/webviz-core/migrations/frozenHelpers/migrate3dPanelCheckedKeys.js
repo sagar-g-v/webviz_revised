@@ -6,7 +6,7 @@
 //  found in the LICENSE file in the root directory of this source tree.
 //  You may not use this file except in compliance with the License.
 
-import type { TopicTreeConfig } from "webviz-core/migrations/frozenMigrations/2020.05.06.00:00:03.migrate3DPanel";
+import type { TopicTreeConfig } from "webviz-core/migrations/frozenMigrations/2020.05.06.00-00-03.migrate3DPanel";
 
 const $WEBVIZ_SOURCE_2 = "/webviz_source_2";
 const ROOT_NAME = "name:root";

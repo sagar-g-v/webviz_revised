@@ -5,7 +5,7 @@
 //  This source code is licensed under the Apache License, Version 2.0,
 //  found in the LICENSE file in the root directory of this source tree.
 //  You may not use this file except in compliance with the License.
-import { migateColorToOverrideColor } from "webviz-core/migrations/frozenMigrations/2020.11.02.14:16:21.migrateColorToOverrideColor.js";
+import { migateColorToOverrideColor } from "webviz-core/migrations/frozenMigrations/2020.11.02.14-16-21.migrateColorToOverrideColor.js";
 
 describe("migateColorToOverrideColor", () => {
   it("uses overrideColor instead of color", () => {
