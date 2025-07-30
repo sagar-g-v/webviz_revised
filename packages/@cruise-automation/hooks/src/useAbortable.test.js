@@ -145,4 +145,17 @@ describe("useAbortable", () => {
     expect(cleanup1).toHaveBeenCalledWith("done1");
     await done2;
   });
+
+  it("cleans up even if the action rejects", async () => {
+    const cleanedup = signal();
+    const action = async () => {
+      throw new Error("bad");
+    };
+    const cleanup = (value) => cleanedup.resolve(value);
+    const App = () => <Test action={action} cleanup={cleanup} />;
+    const el = mount(<App />);
+    el.unmount();
+    const value = await cleanedup;
+    expect(value).toEqual(undefined);
+  });
 });
